@@ -7,8 +7,12 @@ super + Return
 	sakura
 
 # program launcher
-super + @space
-	dmenu_run
+super + space
+	rofi -show run
+
+# password viewer
+super + p
+	rofi-pass -theme lb
 
 # make sxhkd reload its configuration files:
 super + Escape
