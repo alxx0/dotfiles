@@ -21,6 +21,12 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
+# Aliases for useful commands
+alias v=vim
+alias p=pacman
+alias pa=pacaur # Or other AUR helper
+alias s=systemctl
+
 # Colored GCC warnings and errors (just in case)
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
