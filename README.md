@@ -3,7 +3,7 @@
 These are my personal dotfiles. They aren't as rich in features as some, but they work for me.
 
 # Programs I use:
-- Sakura (Terminal Emulator)
+- URxvt (Terminal Emulator)
 - Vim (Text Editor)
 - BSPWM (Tiling Window Manager)
 
