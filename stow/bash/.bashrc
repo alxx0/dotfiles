@@ -13,8 +13,16 @@ shopt -s histappend
 HISTSIZE=1000
 HISTFILESIZE=2000
 
+# Use 'gls' instead of 'ls' on Mac
+# gls is the name of the binary that Homebrew installs when you install coreutils
+if [ `uname -s` = "Darwin" ]; then
+    LS="gls"
+else 
+    LS="ls"
+fi
+
 # Coloured ls and other commands
-alias ls='ls --color=auto'
+alias ls='${LS} -p --color=auto'
 alias dir='dir --color=auto'
 alias vdir='vdir --color=auto'
 alias grep='grep --color=auto'
@@ -22,10 +30,13 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
 # Aliases for useful commands
-alias v=vim
+alias v=nvim
 alias p=pacman
 alias pa=pacaur # Or other AUR helper
 alias s=systemctl
+
+# Enable vim mode
+set -o vi
 
 # Colored GCC warnings and errors (just in case)
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
