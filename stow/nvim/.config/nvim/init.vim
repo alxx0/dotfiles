@@ -17,6 +17,8 @@ call plug#end()
 
 " Tab for opening file menu
 map <TAB> :Files<CR>
+" \ For clearing search highlighting
+map \ :noh<CR>
 
 " For lightline status bar
 set laststatus=2
@@ -26,7 +28,7 @@ let g:lightline = {
 	\ 'colorscheme':'one',
 	\ }
 
-colorscheme peachpuff
+colorscheme desert
 
 " Basic functionality
 set number
