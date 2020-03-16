@@ -18,7 +18,7 @@ call plug#end()
 " Tab for opening file menu
 map <TAB> :Files<CR>
 " \ For clearing search highlighting
-map \ :noh<CR>
+vmap <silent> \ :<C-U>noh<CR>
 
 " For lightline status bar
 set laststatus=2
