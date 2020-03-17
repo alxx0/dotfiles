@@ -16,7 +16,9 @@ Plug 'itchyny/lightline.vim'
 call plug#end()
 
 " Tab for opening file menu
-map <TAB> :Files<CR>
+map <TAB><SPACE> :Files<CR>
+map <TAB>/ :Files /<CR>
+map <TAB>` :Files ~<CR>
 " \ For clearing search highlighting
 vmap <silent> \ :<C-U>noh<CR>
 
