@@ -1,7 +1,15 @@
 # .bashrc
+# This is mainly meant to be run on Arch Linux,
+# but it is also compatible with Mac, provided that
+# you have coreutils installed through Homebrew
 
 # Disable ctrl+s terminal pausing (annoying feature)
 stty -ixon 
+
+# Set environment variables which may or may not be used
+export EDITOR='nvim'
+export BROWSER='brave'
+export TERMINAL='urxvt'
 
 # Don't put duplicate lines or lines starting with space in the history.
 HISTCONTROL=ignoreboth
@@ -42,7 +50,7 @@ set -o vi
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # For my notes file
-alias notes="vim ~/.notes"
+alias notes="$EDITOR ~/.notes"
 
 # Bash prompt (from bashrcgenerator.net)
 export PS1="\[\033[38;5;57m\][\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;27m\]\u\[$(tput sgr0)\]\[\033[38;5;39m\]@\[$(tput sgr0)\]\[\033[38;5;51m\]\h\[$(tput sgr0)\]\[\033[38;5;2m\]:\[$(tput sgr0)\]\[\033[38;5;10m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;57m\]]\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;196m\]\\$\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
