@@ -10,6 +10,10 @@ super + Return
 super + space
 	rofi -show run
 
+# brave browser
+super + b
+    brave
+
 # password viewer
 super + p
 	rofi-pass -theme lb
