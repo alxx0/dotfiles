@@ -20,7 +20,7 @@ map <TAB><SPACE> :Files<CR>
 map <TAB>/ :Files /<CR>
 map <TAB>` :Files ~<CR>
 " \ For clearing search highlighting
-vmap <silent> \ :<C-U>noh<CR>
+map <silent> \ :<C-U>noh<CR>
 
 " For lightline status bar
 set laststatus=2
